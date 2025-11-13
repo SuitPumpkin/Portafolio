@@ -94,7 +94,7 @@ const certifications = [
     title: "Desarrollador de Videojuegos",
     org: "Capacítate para el Empleo",
     year: "2022",
-    image: "https://capacitateparaelempleo.org/static/img/logos/logo_capacitate.svg",
+    image: "https://capacitateparaelempleo.org/assets/images/Logo_Capacitate_White.png",
     skills: ["Game Development"],
   },
   {
@@ -122,35 +122,54 @@ const certifications = [
 
 export default function Experience() {
   return (
-    <section className="max-w-7xl mx-auto py-16 px-6">
-      {/* Header */}
-      <h2 className="text-3xl font-semibold text-primary mb-10 text-center">
-        Experiencia y Certificaciones
-      </h2>
+    <section>
+      {/* 🎨 Fondo suave e integrado */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+        <div className="absolute left-1/2 -translate-x-1/2 top-[30%] w-[90vw] h-[60vh] bg-orange-500/10 blur-[180px] rounded-full" />
+      </div>
 
-      {/* Section 1 - Experiencia profesional */}
-      <div className="mb-16">
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-center mb-16"
+      >
+        <h2 className="text-4xl font-display font-semibold text-primary mb-4">
+          Experiencia y Certificaciones
+        </h2>
+        <p className="text-onbg/80 max-w-2xl mx-auto text-lg">
+          Una trayectoria en evolución constante — combinando desarrollo técnico, diseño creativo y formación continua.
+        </p>
+      </motion.div>
+
+      {/* 🧑‍💻 Experiencia profesional */}
+      <div className="mb-20">
         <h3 className="text-2xl font-semibold text-secondary mb-8 text-center">
           Experiencia profesional
         </h3>
-
         <div className="space-y-10">
-          {experiences.map((exp, index) => (
+          {experiences.map((exp, i) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
+              key={i}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-surface border border-slate-800 rounded-2xl shadow-card p-6 hover:shadow-lg transition-all duration-300"
+              className="relative bg-surface/60 backdrop-blur-md border border-slate-800 rounded-2xl p-6 shadow-md hover:shadow-orange-400/20 transition-all duration-300"
             >
-              <h4 className="text-lg font-semibold text-onbg">{exp.role}</h4>
-              <p className="text-sm text-muted">
-                {exp.company} • {exp.period}
-              </p>
-              <ul className="mt-3 list-disc list-inside text-onbg text-sm space-y-1">
-                {exp.details.map((d, i) => (
-                  <li key={i}>{d}</li>
+              <div className="flex items-start justify-between">
+                <div>
+                  <h4 className="text-lg font-semibold text-onbg">{exp.role}</h4>
+                  <p className="text-sm text-muted">
+                    {exp.company} • {exp.period}
+                  </p>
+                </div>
+              </div>
+              <ul className="mt-3 list-disc list-inside text-onbg/90 text-sm space-y-1">
+                {exp.details.map((d, j) => (
+                  <li key={j}>{d}</li>
                 ))}
               </ul>
             </motion.div>
@@ -158,27 +177,28 @@ export default function Experience() {
         </div>
       </div>
 
-      {/* Section 2 - Certificaciones */}
+      {/* 🎓 Certificados y reconocimientos */}
       <div>
         <h3 className="text-2xl font-semibold text-secondary mb-8 text-center">
           Certificados y reconocimientos
         </h3>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {certifications.map((cert, index) => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {certifications.map((cert, i) => (
             <motion.div
-              key={index}
+              key={i}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-surface border border-slate-800 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300"
+              whileHover={{ y: -6 }}
+              className="bg-surface/60 border border-slate-800 rounded-2xl overflow-hidden backdrop-blur-md shadow-md hover:shadow-orange-400/20 transition-all duration-300"
             >
               <div className="w-full h-28 flex items-center justify-center bg-background/70 p-3">
                 <img
                   src={cert.image}
                   alt={cert.org}
-                  className="max-h-16 object-contain opacity-90"
+                  className="max-h-16 object-contain opacity-90 transition-transform duration-300 hover:scale-105"
                 />
               </div>
               <div className="p-5">
@@ -188,10 +208,10 @@ export default function Experience() {
                 <p className="text-muted text-xs mb-1">{cert.org}</p>
                 <p className="text-xs text-secondary mb-2">{cert.year}</p>
                 <div className="flex flex-wrap gap-1">
-                  {cert.skills.map((skill, i) => (
+                  {cert.skills.map((skill, j) => (
                     <span
-                      key={i}
-                      className="bg-primary/20 text-primary text-[10px] font-medium px-2 py-1 rounded-md"
+                      key={j}
+                      className="bg-orange-500/20 text-orange-400 text-[10px] font-medium px-2 py-1 rounded-md"
                     >
                       {skill}
                     </span>

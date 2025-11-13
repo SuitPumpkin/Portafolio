@@ -6,7 +6,7 @@ export default {
       colors: {
         background: "#0f1724",
         surface: "#0b1220",
-        primary: "#a855f7",
+        primary: "#f7b155ff",
         secondary: "#7c3aed",
         onbg: "#E6EEF8",
         muted: "#a8b3c7",
