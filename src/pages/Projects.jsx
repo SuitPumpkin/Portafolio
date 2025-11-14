@@ -8,7 +8,7 @@ const projects = [
       "GestorX es un gestor de proyectos diseñado específicamente para uso individual. Me permitió fortalecer mis habilidades en .NET y comprender la arquitectura de software enfocada a la gestión personal.",
     skills: [".NET Framework", "C#", "SQLite", "Git"],
     image:
-      "https://private-user-images.githubusercontent.com/109180144/361628425-4db47628-9621-48f6-be85-805892fbc53e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMwOTczNjIsIm5iZiI6MTc2MzA5NzA2MiwicGF0aCI6Ii8xMDkxODAxNDQvMzYxNjI4NDI1LTRkYjQ3NjI4LTk2MjEtNDhmNi1iZTg1LTgwNTg5MmZiYzUzZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExNFQwNTExMDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05ZTFhMGI2ZTUzZDUyZGVmOGZmYzFjODZmZDkwMjFjZGQ4NWIxMDUxZWFkZGUxNGFlMjA2NTJmYWUyZTQwM2Q0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.YjyZaoDFYFLMKdLOd-rP-n3mBm8ci5WNJmbgxK0yZvo",
+      "/gestor.png",
     github: "https://github.com/SuitPumpkin/Gestor_X",
   },
   {
@@ -22,7 +22,7 @@ const projects = [
       "Full-Stack Development",
     ],
     image:
-      "https://private-user-images.githubusercontent.com/109180144/497637966-6d456094-5761-411b-92dc-d83f878939b7.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMwOTcyNTUsIm5iZiI6MTc2MzA5Njk1NSwicGF0aCI6Ii8xMDkxODAxNDQvNDk3NjM3OTY2LTZkNDU2MDk0LTU3NjEtNDExYi05MmRjLWQ4M2Y4Nzg5MzliNy5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExNFQwNTA5MTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hN2YwNzhjMTJkZmJkM2IwODRjZWNiODJiNmU4MjU4MmZkZDI3YTJmOTFlZTRmNTY0MDI5NThiOTg2YjdkMTc5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.X6YgkvtnQbO4T_v3-3wsTYTTmteb62RvZg7yQ46f5UA",
+      "/pronostika.gif",
     github:
       "https://github.com/SuitPumpkin/Will-It-Rain-On-My-Parade",
   },
@@ -33,7 +33,7 @@ const projects = [
       "Aplicación en Python que permite consultar el estado de Resin y otros recursos dentro de los juegos Genshin Impact y Honkai Star Rail, utilizando la API de GenshinPy.",
     skills: ["Python", "API Integration"],
     image:
-      "https://private-user-images.githubusercontent.com/109180144/334627777-f2817664-45be-460e-9714-fbd233c4bff1.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMwOTczODUsIm5iZiI6MTc2MzA5NzA4NSwicGF0aCI6Ii8xMDkxODAxNDQvMzM0NjI3Nzc3LWYyODE3NjY0LTQ1YmUtNDYwZS05NzE0LWZiZDIzM2M0YmZmMS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExNFQwNTExMjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNzgyNjQzMDRiYTM2YjA0ODMxMjQ5MDVhOGQyZTc4ZTIyMGUyM2Q0YTQyMWEzM2YwN2UyOWFhMzY5OWMzODRhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.E_7zWtyBQxcQw8xCJBn6bQ9g9uskgL8VKoVAQacHVcA",
+      "/resine.jpg",
     github:
       "https://github.com/SuitPumpkin/SuitPumpkins-Resin-Checker",
   },
@@ -44,7 +44,7 @@ const projects = [
       "Software simple y funcional desarrollado en .NET para convertir entre múltiples formatos multimedia: imágenes, videos y audios. Permite conversiones masivas con una interfaz intuitiva.",
     skills: ["C#", ".NET Framework", "Git"],
     image:
-      "https://private-user-images.githubusercontent.com/109180144/361182309-0fe8106f-0674-4c3b-97e4-77403812006a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMwOTczMjMsIm5iZiI6MTc2MzA5NzAyMywicGF0aCI6Ii8xMDkxODAxNDQvMzYxMTgyMzA5LTBmZTgxMDZmLTA2NzQtNGMzYi05N2U0LTc3NDAzODEyMDA2YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExNFQwNTEwMjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNjBkYTk1NjgyOGM1YmZjMzY5N2E1YjRhMzljZDJiYzlkODUwMjVkOTE2YTcyNDFkNjE3ODc1NjUxOGE0YmQ1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.CYb8MHlJojjtSLXiGP54KByGrL_8C0sp0TrrgaH5GmE",
+      "/media.png",
     github:
       "https://github.com/SuitPumpkin/MultimediaFormatConverter",
   },
