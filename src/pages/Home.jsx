@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
@@ -62,12 +63,13 @@ export default function Home() {
         </p>
 
         <div className="mt-8 flex justify-center md:justify-start">
-          <a
-            href="/sobre-mi"
-            className="btn-primary text-sm px-6 py-3 shadow-md shadow-primary/30 hover:shadow-lg hover:shadow-primary/40 transition-all duration-300"
+          <Link
+            to="/sobre-mi"
+            className="btn-primary text-sm px-6 py-3"
           >
             Ver más
-          </a>
+          </Link>
+
         </div>
       </motion.div>
     </section>

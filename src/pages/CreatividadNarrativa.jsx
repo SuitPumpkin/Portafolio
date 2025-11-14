@@ -115,11 +115,11 @@ export default function CreatividadNarrativa() {
         link: "https://drive.google.com/drive/folders/1U8VxFarVHV2hwhXCX24NUZ7myplYm3Cp?usp=drive_link",
         actividades: [
             {
-            nombre: "Actividad 1: Crea una historia con los sonidos del aula (versión extendida)",
+            nombre: "Actividad 1: Crea una historia con los sonidos del aula",
             descripcion:
                 "Se experimentó con el lenguaje sonoro narrativo para construir una historia breve combinando voz, efectos, música y silencios. El resultado fue la historia *'New Braithe City'*, ambientada en un universo steampunk donde la vida cotidiana se narra a través de sonidos metálicos, vapor y música rock alternativa, evocando la melancolía y el caos de una ciudad oxidada.",
             imagen:
-                "https://thumbs.dreamstime.com/b/marca-pendiente-etiqueta-sobre-fondo-transparente-signo-de-redondeo-360670879.jpg",
+                "/Ray.jpg",
             },
         ],
         },

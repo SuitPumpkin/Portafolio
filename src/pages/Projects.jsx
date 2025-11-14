@@ -8,7 +8,7 @@ const projects = [
       "GestorX es un gestor de proyectos diseñado específicamente para uso individual. Me permitió fortalecer mis habilidades en .NET y comprender la arquitectura de software enfocada a la gestión personal.",
     skills: [".NET Framework", "C#", "SQLite", "Git"],
     image:
-      "https://private-user-images.githubusercontent.com/109180144/361628425-4db47628-9621-48f6-be85-805892fbc53e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMwMTQxMDUsIm5iZiI6MTc2MzAxMzgwNSwicGF0aCI6Ii8xMDkxODAxNDQvMzYxNjI4NDI1LTRkYjQ3NjI4LTk2MjEtNDhmNi1iZTg1LTgwNTg5MmZiYzUzZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExM1QwNjAzMjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYjY2YzRkNWIwYmFmN2EwODYyNWY2MTY3MGU1ZjlkNGI1MGQ0ODgzZWVmOThhN2IzODgxOTA5YTY5YWY5ZGI3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.9Hlf_ClHWbSjpsOHm4L4KFk8Bzrdnq_3CJL5aMBY7Gc",
+      "https://private-user-images.githubusercontent.com/109180144/361628425-4db47628-9621-48f6-be85-805892fbc53e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMwOTczNjIsIm5iZiI6MTc2MzA5NzA2MiwicGF0aCI6Ii8xMDkxODAxNDQvMzYxNjI4NDI1LTRkYjQ3NjI4LTk2MjEtNDhmNi1iZTg1LTgwNTg5MmZiYzUzZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExNFQwNTExMDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05ZTFhMGI2ZTUzZDUyZGVmOGZmYzFjODZmZDkwMjFjZGQ4NWIxMDUxZWFkZGUxNGFlMjA2NTJmYWUyZTQwM2Q0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.YjyZaoDFYFLMKdLOd-rP-n3mBm8ci5WNJmbgxK0yZvo",
     github: "https://github.com/SuitPumpkin/Gestor_X",
   },
   {
@@ -22,7 +22,7 @@ const projects = [
       "Full-Stack Development",
     ],
     image:
-      "https://private-user-images.githubusercontent.com/109180144/497637966-6d456094-5761-411b-92dc-d83f878939b7.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMwMTQxMjYsIm5iZiI6MTc2MzAxMzgyNiwicGF0aCI6Ii8xMDkxODAxNDQvNDk3NjM3OTY2LTZkNDU2MDk0LTU3NjEtNDExYi05MmRjLWQ4M2Y4Nzg5MzliNy5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExM1QwNjAzNDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNWNlYWE4YjdmMjA0OWIxYzc3ZTg3ZGUzMGQzNTQwZDQ2YTMxZTJiMTYzNzNlOWY1MjZkZjViMTdlMGQ2ODJjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.DAY8TaYETSmpIz7NqsYB_AFl3Ni9kKZ0ksNvNwEdWuY",
+      "https://private-user-images.githubusercontent.com/109180144/497637966-6d456094-5761-411b-92dc-d83f878939b7.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMwOTcyNTUsIm5iZiI6MTc2MzA5Njk1NSwicGF0aCI6Ii8xMDkxODAxNDQvNDk3NjM3OTY2LTZkNDU2MDk0LTU3NjEtNDExYi05MmRjLWQ4M2Y4Nzg5MzliNy5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExNFQwNTA5MTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hN2YwNzhjMTJkZmJkM2IwODRjZWNiODJiNmU4MjU4MmZkZDI3YTJmOTFlZTRmNTY0MDI5NThiOTg2YjdkMTc5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.X6YgkvtnQbO4T_v3-3wsTYTTmteb62RvZg7yQ46f5UA",
     github:
       "https://github.com/SuitPumpkin/Will-It-Rain-On-My-Parade",
   },
@@ -33,7 +33,7 @@ const projects = [
       "Aplicación en Python que permite consultar el estado de Resin y otros recursos dentro de los juegos Genshin Impact y Honkai Star Rail, utilizando la API de GenshinPy.",
     skills: ["Python", "API Integration"],
     image:
-      "https://private-user-images.githubusercontent.com/109180144/334627777-f2817664-45be-460e-9714-fbd233c4bff1.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMwMTQxNjIsIm5iZiI6MTc2MzAxMzg2MiwicGF0aCI6Ii8xMDkxODAxNDQvMzM0NjI3Nzc3LWYyODE3NjY0LTQ1YmUtNDYwZS05NzE0LWZiZDIzM2M0YmZmMS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExM1QwNjA0MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lY2JiYmZhZWE4MmYyOTI0ZGQwZmZkZTFmMWRkMjBhZGY5NTJhMDFiZTlhZTUzMTgzMmFhZDI0ZmQ4NGZlMWY5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Pio-X3i5zp0-cKhbOVUudBEEEymJJr30h5O8Mf18zx4",
+      "https://private-user-images.githubusercontent.com/109180144/334627777-f2817664-45be-460e-9714-fbd233c4bff1.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMwOTczODUsIm5iZiI6MTc2MzA5NzA4NSwicGF0aCI6Ii8xMDkxODAxNDQvMzM0NjI3Nzc3LWYyODE3NjY0LTQ1YmUtNDYwZS05NzE0LWZiZDIzM2M0YmZmMS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExNFQwNTExMjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNzgyNjQzMDRiYTM2YjA0ODMxMjQ5MDVhOGQyZTc4ZTIyMGUyM2Q0YTQyMWEzM2YwN2UyOWFhMzY5OWMzODRhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.E_7zWtyBQxcQw8xCJBn6bQ9g9uskgL8VKoVAQacHVcA",
     github:
       "https://github.com/SuitPumpkin/SuitPumpkins-Resin-Checker",
   },
@@ -44,7 +44,7 @@ const projects = [
       "Software simple y funcional desarrollado en .NET para convertir entre múltiples formatos multimedia: imágenes, videos y audios. Permite conversiones masivas con una interfaz intuitiva.",
     skills: ["C#", ".NET Framework", "Git"],
     image:
-      "https://private-user-images.githubusercontent.com/109180144/361182309-0fe8106f-0674-4c3b-97e4-77403812006a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMwMTQxOTUsIm5iZiI6MTc2MzAxMzg5NSwicGF0aCI6Ii8xMDkxODAxNDQvMzYxMTgyMzA5LTBmZTgxMDZmLTA2NzQtNGMzYi05N2U0LTc3NDAzODEyMDA2YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExM1QwNjA0NTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMzBkM2M1ZDMwNWU4OWI5OTlhNTE5N2I2ZDg3OTJkMzBmNjMxOWY4ZDUzZDhjMTMzODFkYjJiMzc5NjAzMzc1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.tJb6FlxH1g-JAfp0XjyXqfH7a6HI27IYLrHYZhmIX0c",
+      "https://private-user-images.githubusercontent.com/109180144/361182309-0fe8106f-0674-4c3b-97e4-77403812006a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjMwOTczMjMsIm5iZiI6MTc2MzA5NzAyMywicGF0aCI6Ii8xMDkxODAxNDQvMzYxMTgyMzA5LTBmZTgxMDZmLTA2NzQtNGMzYi05N2U0LTc3NDAzODEyMDA2YS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExNFQwNTEwMjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNjBkYTk1NjgyOGM1YmZjMzY5N2E1YjRhMzljZDJiYzlkODUwMjVkOTE2YTcyNDFkNjE3ODc1NjUxOGE0YmQ1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.CYb8MHlJojjtSLXiGP54KByGrL_8C0sp0TrrgaH5GmE",
     github:
       "https://github.com/SuitPumpkin/MultimediaFormatConverter",
   },
@@ -53,7 +53,6 @@ const projects = [
 export default function Projects() {
   return (
     <section className="max-w-6xl mx-auto py-16 px-6 relative">
-      {/* 🔸 Fondo suave con brillo degradado */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-orange-500/5 to-transparent blur-3xl" />
 
       <motion.h2
@@ -68,30 +67,35 @@ export default function Projects() {
 
       <div className="grid md:grid-cols-2 gap-10 relative z-10">
         {projects.map((proj, index) => (
-          <motion.div
+          <motion.a
             key={index}
+            href={proj.github}
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: index * 0.1 }}
+            transition={{ duration: 0.7, delay: index * 0.08 }}
             viewport={{ once: true }}
-            className="group bg-surface border border-slate-800/80 rounded-2xl overflow-hidden shadow-lg hover:shadow-orange-500/20 transition-all duration-500 transform hover:-translate-y-1"
+            className="group block bg-surface border border-slate-800/80 rounded-2xl overflow-hidden shadow-lg hover:shadow-orange-500/20 transition-all duration-500 transform hover:-translate-y-1"
           >
-            {/* Imagen con overlay */}
-            <div className="relative w-full h-60 overflow-hidden">
+            {/* imagen */}
+            <div className="relative w-full h-60 overflow-hidden bg-neutral-900/20">
               <img
                 src={proj.image}
                 alt={proj.title}
                 className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = "/projects/placeholder.png";
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
-
-              {/* Etiqueta decorativa */}
               <span className="absolute top-3 left-3 text-xs font-semibold bg-orange-500/80 text-white px-3 py-1 rounded-full backdrop-blur-sm shadow-md">
                 Proyecto destacado
               </span>
             </div>
 
-            {/* Contenido */}
+            {/* contenido */}
             <div className="p-6 flex flex-col h-full">
               <h3 className="text-xl font-semibold text-secondary mb-1">
                 {proj.title}
@@ -114,17 +118,12 @@ export default function Projects() {
               </div>
 
               <div className="mt-auto flex justify-end">
-                <a
-                  href={proj.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-orange-400 hover:text-orange-300 font-medium transition-colors flex items-center gap-1"
-                >
+                <span className="text-sm text-orange-400 hover:text-orange-300 font-medium transition-colors flex items-center gap-2">
                   🔗 Ver en GitHub
-                </a>
+                </span>
               </div>
             </div>
-          </motion.div>
+          </motion.a>
         ))}
       </div>
     </section>
