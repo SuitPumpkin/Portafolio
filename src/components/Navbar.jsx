@@ -15,9 +15,7 @@ export default function Navbar() {
     { path: "/contacto", label: "Contacto" },
   ];
 
-  const specialNav = [
-    { path: "/creatividad-narrativa", label: "Creatividad Narrativa" },
-  ];
+  const specialNav = [];
 
   return (
     <nav className="bg-surface/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-800/60 shadow-[0_2px_10px_rgba(0,0,0,0.4)]">

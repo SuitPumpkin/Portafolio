@@ -7,7 +7,6 @@ import Declaration from "./pages/Declaration";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
-import CreatividadNarrativa from "./pages/CreatividadNarrativa";
 
 export default function App() {
   return (
@@ -22,7 +21,6 @@ export default function App() {
             <Route path="/proyectos" element={<Projects />} />
             <Route path="/experiencia" element={<Experience />} />
             <Route path="/contacto" element={<Contact />} />
-            <Route path="/creatividad-narrativa" element={<CreatividadNarrativa />} />
           </Routes>
         </main>
         <Footer />
