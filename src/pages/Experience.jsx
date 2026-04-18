@@ -2,6 +2,17 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    role: "Desarrollador Fullstack",
+    company: "GETINSOFT",
+    period: "Noviembre 2025 – Actualidad",
+    details: [
+      "Desarrollé soluciones utilizando Azure DevOps y Firebase.",
+      "Trabajé tanto en frontend como en backend en múltiples proyectos.",
+      "Apliqué la metodología SCRUM en un entorno de trabajo híbrido.",
+      "Fui parte de procesos de CI/CD utilizando Conventional Commits y arquitectura limpia.",
+    ],
+  },
+  {
     role: "Desarrollador y Diseñador",
     company: "Evolution",
     period: "Enero 2024 – Diciembre 2024",

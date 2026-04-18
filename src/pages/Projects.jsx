@@ -2,6 +2,16 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "Productshowcase",
+    period: "2025",
+    description:
+      "Aplicación desarrollada en Unreal Engine 5 para mostrar productos de forma interactiva y visualmente impactante. Permite a los usuarios explorar y visualizar productos en un entorno 3D inmersivo.",
+    skills: ["Unreal Engine 5", "3D Development", "Interactive Design"],
+    image:
+      "/Productshowcase.gif",
+    github: "https://github.com/SuitPumpkin/Productshowcase",
+  },
+  {
     title: "GestorX",
     period: "Ago 2024 - Presente",
     description:
