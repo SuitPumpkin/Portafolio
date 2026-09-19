@@ -4,20 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#0f1724",
-        surface: "#0b1220",
-        primary: "#f7b155ff",
-        secondary: "#7c3aed",
-        onbg: "#E6EEF8",
-        muted: "#a8b3c7",
-        accent: "#f59e0b",
+        bg: "#262626",
+        surface: "#303030",
+        suitred: "#AC393B",
+        suitgold: "#B39148",
+        cream: "#F2F0EF",
+        muted: "#9a9a9a",
       },
       fontFamily: {
-        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["Space Grotesk", "Inter", "sans-serif"],
-      },
-      boxShadow: {
-        card: "0 8px 24px rgba(2,6,23,0.6)",
+        primary: ["Sora", "ui-sans-serif", "system-ui", "sans-serif"],
+        brand: ["Montserrat", "ui-sans-serif", "system-ui", "sans-serif"],
       },
     },
   },

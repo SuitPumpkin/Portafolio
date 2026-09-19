@@ -11,9 +11,9 @@ import Contact from "./pages/Contact";
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col bg-background text-white">
+      <div className="min-h-screen flex flex-col bg-bg text-cream">
         <Navbar />
-        <main className="flex-grow px-6 py-10 max-w-6xl mx-auto">
+        <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sobre-mi" element={<About />} />

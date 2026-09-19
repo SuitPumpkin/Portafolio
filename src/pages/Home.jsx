@@ -4,38 +4,41 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
-    <section className="min-h-[90vh] flex flex-col md:flex-row items-center justify-center bg-background">
-      {/* Imagen a la izquierda */}
-      <div className="relative w-full md:w-1/2 h-[60vh] md:h-[90vh] flex justify-center items-center">
-        <div className="relative w-[85%] md:w-[90%] aspect-[3/4] overflow-hidden rounded-3xl shadow-2xl">
+    <section className="min-h-[90vh] flex flex-col md:flex-row items-center bg-bg">
+      <div className="relative w-full md:w-[45%] h-[60vh] md:h-[85vh] flex justify-center items-center px-6 md:px-0">
+        <div className="relative w-[80%] md:w-[75%] aspect-[3/4] overflow-hidden rounded-2xl">
           <img
             src="/Foto.jpg"
-            alt="Rodrigo Alejandro Loza Navarro - SuitPumpkin"
-            className="object-contain w-full h-full rounded-3xl filter brightness-95 transition-transform duration-500 hover:scale-[1.02]"
+            alt="Rodrigo Alejandro Loza Navarro — SuitPumpkin"
+            className="object-contain w-full h-full rounded-2xl brightness-[0.92] transition-transform duration-700 hover:scale-[1.02]"
           />
-          {/* Degradado suave */}
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent rounded-3xl" />
+          <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/30 to-transparent rounded-2xl" />
         </div>
-
-        {/* Brillo naranja detrás de la foto */}
-        <div className="absolute -z-10 w-[90%] h-[90%] rounded-full bg-gradient-to-tr from-orange-500/40 via-yellow-400/20 to-transparent blur-[200px] animate-pulse"></div>
+        <div className="absolute -z-10 w-[70%] h-[70%] rounded-full bg-suitred/8 blur-[120px]" />
+        <div className="absolute -z-10 w-[50%] h-[50%] rounded-full bg-suitgold/5 blur-[100px] top-[20%] left-[10%]" />
       </div>
 
-      {/* Texto a la derecha */}
       <motion.div
-        initial={{ opacity: 0, x: 50 }}
+        initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        className="relative w-full md:w-1/2 px-6 md:px-12 py-10 text-center md:text-left"
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="w-full md:w-[55%] px-6 md:px-12 lg:px-16 py-12 text-center md:text-left"
       >
-        <h1 className="text-4xl md:text-5xl font-display font-semibold text-primary mb-2">
-          Rodrigo Alejandro Loza Navarro
+        <p className="text-suitgold text-xs font-brand tracking-[0.3em] uppercase mb-4">
+          Desarrollador de Software
+        </p>
+
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-primary font-semibold text-cream mb-4 leading-tight">
+          Rodrigo Alejandro
+          <br />
+          Loza Navarro
         </h1>
-        <p className="text-lg md:text-xl text-orange-500 mb-4 font-medium tracking-wide opacity-70">
+
+        <p className="text-muted text-sm font-brand tracking-[0.15em] uppercase mb-8">
           @SuitPumpkin
         </p>
 
-        <h2 className="text-xl md:text-2xl text-secondary mb-4 h-[2rem]">
+        <h2 className="text-xl md:text-2xl text-suitred font-primary font-medium mb-6 h-[2.5rem] md:h-[2.8rem]">
           <Typewriter
             words={[
               "Full-Stack Developer",
@@ -46,7 +49,7 @@ export default function Home() {
               "UI/UX Designer",
               "C# .NET Developer",
             ]}
-            loop={true}
+            loop
             cursor
             cursorStyle="_"
             typeSpeed={70}
@@ -55,21 +58,20 @@ export default function Home() {
           />
         </h2>
 
-        <p className="text-onbg text-sm md:text-base leading-relaxed max-w-lg">
-          Desarrollador de software con experiencia en C# .NET, Python y tecnologías
-          web y móviles. Apasionado por la creación de soluciones escalables y
-          bien estructuradas, combinando desarrollo técnico con diseño narrativo y
-          creatividad digital.
+        <p className="text-cream/80 text-sm md:text-base leading-relaxed max-w-lg mb-10">
+          Desarrollador de software con experiencia en C# .NET, Python y
+          tecnologías web y móviles. Apasionado por crear soluciones escalables
+          y bien estructuradas, combinando desarrollo técnico con diseño
+          narrativo y creatividad digital.
         </p>
 
-        <div className="mt-8 flex justify-center md:justify-start">
+        <div className="flex justify-center md:justify-start">
           <Link
             to="/sobre-mi"
-            className="btn-primary text-sm px-6 py-3"
+            className="inline-block border border-suitred text-suitred hover:bg-suitred hover:text-cream text-sm px-8 py-3 rounded-sm transition-all duration-300 tracking-wide font-primary font-medium"
           >
             Ver más
           </Link>
-
         </div>
       </motion.div>
     </section>
