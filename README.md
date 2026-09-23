@@ -81,7 +81,7 @@ src/
 
 public/
 ├── logo.png
-├── Foto.jpg
+├── Foto.png
 ├── Favicon.ico
 ├── gestor.png
 ├── media.png

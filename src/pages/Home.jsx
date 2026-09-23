@@ -8,7 +8,7 @@ export default function Home() {
       <div className="relative w-full md:w-[45%] h-[60vh] md:h-[85vh] flex justify-center items-center px-6 md:px-0">
         <div className="relative w-[80%] md:w-[75%] aspect-[3/4] overflow-hidden rounded-2xl">
           <img
-            src="/Foto.jpg"
+            src="/Foto.png"
             alt="Rodrigo Alejandro Loza Navarro — SuitPumpkin"
             className="object-contain w-full h-full rounded-2xl brightness-[0.92] transition-transform duration-700 hover:scale-[1.02]"
           />

@@ -61,7 +61,7 @@ export default function About() {
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border border-cream/10">
             <img
-              src="/Foto.jpg"
+              src="/Foto.png"
               alt="Alejandro Loza — SuitPumpkin"
               className="object-cover w-full h-full brightness-[0.92] transition-transform duration-500 hover:scale-[1.03]"
             />
