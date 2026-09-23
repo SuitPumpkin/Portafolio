@@ -80,8 +80,8 @@ src/
     └── Creativity.jsx
 
 public/
-├── logo.png
-├── Foto.png
+├── logo NEW.png
+├── Foto.webp
 ├── Favicon.ico
 ├── gestor.png
 ├── media.png

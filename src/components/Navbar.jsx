@@ -18,15 +18,12 @@ export default function Navbar() {
   return (
     <nav className="bg-bg/90 backdrop-blur-md sticky top-0 z-50 border-b border-cream/5">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 group">
+        <Link to="/" className="flex items-center group">
           <img
-            src="/logo.png"
+            src="/logo%20NEW.png"
             alt="Suit Pumpkin"
-            className="w-10 h-10 object-contain transition-opacity duration-300 group-hover:opacity-80"
+            className="h-10 w-auto transition-opacity duration-300 group-hover:opacity-80"
           />
-          <span className="font-brand font-bold text-cream text-lg tracking-[0.2em] uppercase">
-            Suit Pumpkin
-          </span>
         </Link>
 
         <button
