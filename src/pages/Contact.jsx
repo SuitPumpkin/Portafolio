@@ -1,15 +1,10 @@
-import { motion } from "framer-motion";
+import Reveal from "../components/Reveal";
 import { Mail, Smartphone, Github, Linkedin } from "lucide-react";
 
 export default function Contact() {
   return (
     <section className="max-w-4xl mx-auto py-16 px-6">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        className="text-left mb-16"
-      >
+      <div className="animate-fade-in-up text-left mb-16">
         <p className="text-suitgold text-xs font-brand tracking-[0.3em] uppercase mb-3">
           Contacto
         </p>
@@ -20,14 +15,12 @@ export default function Contact() {
           ¿Tienes un proyecto o simplemente quieres conectar? No dudes
           en llegar.
         </p>
-      </motion.div>
+      </div>
 
       <div className="grid md:grid-cols-2 gap-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+        <Reveal
+          y={20}
+          duration={0.5}
           className="flex flex-col gap-4"
         >
           <a
@@ -88,13 +81,12 @@ export default function Contact() {
               </p>
             </div>
           </a>
-        </motion.div>
+        </Reveal>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.15 }}
+        <Reveal
+          y={20}
+          duration={0.5}
+          delay={0.15}
           className="flex flex-col justify-center bg-surface/30 border border-cream/5 rounded-xl p-8"
         >
           <p className="text-suitgold text-xs font-brand tracking-[0.3em] uppercase mb-4">
@@ -107,18 +99,18 @@ export default function Contact() {
             Rodrigo Alejandro Loza Navarro
           </p>
           <p className="text-cream/70 text-sm leading-relaxed mb-8">
-            Desarrollador Full Stack con enfoque en C#/.NET, creatividad
-            digital y diseño narrativo. Apasionado por la tecnología como
-            medio para crear experiencias significativas.
+            Desarrollador Fullstack — Web, Escritorio e IA. Construyo
+            productos de punta a punta: requerimientos, código, interfaz y
+            comunicación, con React, TypeScript y NestJS.
           </p>
           <a
             href="mailto:rodrigoalozan@gmail.com"
             className="inline-block text-center border border-suitred text-suitred hover:bg-suitred hover:text-cream text-sm px-8 py-3 rounded-sm transition-all duration-300 tracking-wide font-primary font-medium"
           >
             Contáctame
-          </a>
-        </motion.div>
-      </div>
-    </section>
-  );
+            </a>
+          </Reveal>
+        </div>
+      </section>
+    );
 }

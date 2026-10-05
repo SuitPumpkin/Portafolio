@@ -9,6 +9,38 @@
   --color-muted: #9a9a9a;
   --font-primary: "Sora", ui-sans-serif, system-ui, sans-serif;
   --font-brand: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-fade-in: fade-in 0.8s ease-out both;
+  --animate-fade-in-up: fade-in-up 0.7s ease-out both;
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translate(
+        var(--fade-x, 0),
+        var(--fade-y, 1.875rem)
+      );
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
 }
 
 :root {
@@ -41,4 +73,49 @@ h1, h2, h3, h4, h5, h6 {
 ::selection {
   background-color: var(--suitred);
   color: var(--cream);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translate3d(
+    var(--reveal-x, 0px),
+    var(--reveal-y, 1.5rem),
+    0
+  ) scale(var(--reveal-scale, 1));
+  transition-property: opacity, transform;
+  transition-timing-function: ease-out;
+  transition-duration: 0.6s;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.reveal-hover-lift.reveal-visible:hover {
+  transform: translate3d(0, -0.25rem, 0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+
+  .cert-marquee-mask {
+    mask-image: none;
+    overflow-x: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .animate-fade-in,
+  .animate-fade-in-up {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }

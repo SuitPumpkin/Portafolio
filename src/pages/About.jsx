@@ -1,15 +1,10 @@
-import { motion } from "framer-motion";
+import Reveal from "../components/Reveal";
 import { Code, Brain, Palette, Trophy } from "lucide-react";
 
 export default function About() {
   return (
     <section className="max-w-6xl mx-auto py-16 px-6">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        className="text-left mb-16"
-      >
+      <div className="animate-fade-in-up text-left mb-16">
         <p className="text-suitgold text-xs font-brand tracking-[0.3em] uppercase mb-3">
           Acerca de mí
         </p>
@@ -21,22 +16,20 @@ export default function About() {
           por el aprendizaje continuo y la creación de soluciones que integren
           tecnología, diseño y narrativa.
         </p>
-      </motion.div>
+      </div>
 
       <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start mb-20 max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+        <Reveal
+          y={30}
+          duration={0.6}
           className="text-cream/80 leading-relaxed space-y-6"
         >
           <p>
             Disfruto trabajar en entornos donde puedo combinar mi lado técnico
-            con la parte creativa. A lo largo de mi formación en Ingeniería en
-            Computación y Creatividad Digital, he aprendido a construir proyectos
-            escalables, visualmente atractivos y centrados en la experiencia del
-            usuario.
+            con la parte creativa. A lo largo de mi formación en Creatividad
+            Digital y mis estudios de Ingeniería en Computación —completos
+            parcialmente— he aprendido a construir proyectos escalables,
+            visualmente atractivos y centrados en la experiencia del usuario.
           </p>
           <p>
             Creo que la mejor tecnología es aquella que{" "}
@@ -50,13 +43,12 @@ export default function About() {
             combina formalidad, creatividad y un enfoque diferente hacia la
             tecnología.
           </p>
-        </motion.div>
+        </Reveal>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
+        <Reveal
+          scale={0.95}
+          duration={0.6}
+          delay={0.1}
           className="flex justify-center md:justify-end"
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border border-cream/10">
@@ -67,14 +59,11 @@ export default function About() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-bg/60 via-transparent to-transparent" />
           </div>
-        </motion.div>
+        </Reveal>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
+      <Reveal
+        duration={0.8}
         className="max-w-6xl mx-auto"
       >
         <p className="text-suitgold text-xs font-brand tracking-[0.3em] uppercase mb-4 text-center">
@@ -89,7 +78,7 @@ export default function About() {
             {
               icon: <Code className="w-8 h-8 text-suitgold mx-auto mb-4" strokeWidth={1.5} />,
               title: "Desarrollo",
-              desc: "C# .NET / Python / React / Vue / SQLite",
+              desc: "React / TypeScript / NestJS / PostgreSQL / Python / C#",
             },
             {
               icon: <Brain className="w-8 h-8 text-suitgold mx-auto mb-4" strokeWidth={1.5} />,
@@ -107,19 +96,17 @@ export default function About() {
               desc: "+20 certificaciones Google, IBM, Epic Games y más.",
             },
           ].map((card, i) => (
-            <motion.div
+            <div
               key={i}
-              whileHover={{ y: -4 }}
-              transition={{ duration: 0.2 }}
-              className="p-6 rounded-xl bg-surface/50 border border-cream/5 transition-all duration-300 hover:border-suitgold/20"
+              className="p-6 rounded-xl bg-surface/50 border border-cream/5 transition-all duration-300 hover:border-suitgold/20 hover:-translate-y-1"
             >
               {card.icon}
               <h4 className="font-semibold text-cream text-sm mb-2">{card.title}</h4>
               <p className="text-sm text-muted leading-relaxed">{card.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
-      </motion.div>
+      </Reveal>
     </section>
   );
 }

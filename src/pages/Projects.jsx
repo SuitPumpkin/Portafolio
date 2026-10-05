@@ -1,6 +1,24 @@
-import { motion } from "framer-motion";
+import Reveal from "../components/Reveal";
 
 const projects = [
+  {
+    title: "WebPageVS",
+    period: "2026 · En producción",
+    description:
+      "Plataforma para organizar concursos de páginas web en clase. El profesor carga una cola de proyectos, comparte la sala con un código y un QR, y los alumnos votan desde su móvil mientras los resultados se sincronizan en tiempo real por WebSocket. Los empates se resuelven de forma determinista con incrementos de +0.1, y el resultado se puede exportar a CSV.",
+    skills: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "WebSocket",
+      "Docker",
+    ],
+    image: "/webpagevs.png",
+    github: "https://github.com/SuitPumpkin/WebPageVS",
+    deploy: "https://webpagevs.onrender.com/",
+    featured: true,
+  },
   {
     title: "Productshowcase",
     period: "2025",
@@ -9,11 +27,11 @@ const projects = [
     skills: ["Unreal Engine 5", "3D Development", "Interactive Design"],
     image: "/Productshowcase.gif",
     github: "https://github.com/SuitPumpkin/Productshowcase",
-    featured: true,
+    featured: false,
   },
   {
     title: "GestorX",
-    period: "Ago 2024 - Presente",
+    period: "Ago 2024 - May 2025",
     description:
       "GestorX es un gestor de proyectos diseñado específicamente para uso individual. Permite fortalecer habilidades en .NET y comprender la arquitectura de software enfocada a la gestión personal.",
     skills: [".NET Framework", "C#", "SQLite", "Git"],
@@ -26,7 +44,7 @@ const projects = [
     period: "Oct 2025",
     description:
       "Desarrollado para el reto 'Will It Rain On My Parade?' del NASA Space Apps Challenge Guadalajara 2025 como parte del equipo Tamales.bat. Proyecto full-stack que combina diseño frontend y desarrollo backend para visualizar pronósticos meteorológicos.",
-    skills: ["Front-End", "Back-End", "Full-Stack"],
+    skills: ["Python", "FastAPI", "Vue.js", "Leaflet"],
     image: "/pronostika.gif",
     github: "https://github.com/SuitPumpkin/Will-It-Rain-On-My-Parade",
     featured: false,
@@ -41,16 +59,6 @@ const projects = [
     github: "https://github.com/SuitPumpkin/SuitPumpkins-Resin-Checker",
     featured: false,
   },
-  {
-    title: "Multimedia Format Converter",
-    period: "Ago 2024",
-    description:
-      "Software simple y funcional desarrollado en .NET para convertir entre múltiples formatos multimedia: imágenes, videos y audios. Permite conversiones masivas con una interfaz intuitiva.",
-    skills: ["C#", ".NET Framework", "Git"],
-    image: "/media.png",
-    github: "https://github.com/SuitPumpkin/MultimediaFormatConverter",
-    featured: false,
-  },
 ];
 
 export default function Projects() {
@@ -59,30 +67,19 @@ export default function Projects() {
 
   return (
     <section className="max-w-6xl mx-auto py-16 px-6">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="text-left mb-16"
-      >
+      <div className="animate-fade-in-up text-left mb-16">
         <p className="text-suitgold text-xs font-brand tracking-[0.3em] uppercase mb-3">
           Portafolio
         </p>
         <h2 className="text-3xl md:text-4xl font-primary font-semibold text-cream">
           Proyectos
         </h2>
-      </motion.div>
+      </div>
 
       {featured && (
-        <motion.a
-          href={featured.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
+        <Reveal
+          y={40}
+          duration={0.7}
           className="group grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 border border-cream/5 bg-surface/30 rounded-2xl overflow-hidden hover:border-suitgold/20 transition-all duration-500"
         >
           <div className="relative w-full h-64 md:h-80 overflow-hidden bg-neutral-900/30">
@@ -114,26 +111,45 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-            <span className="text-sm text-suitred font-medium transition-colors duration-200 hover:text-suitgold tracking-wide">
-              Ver en GitHub →
-            </span>
-          </div>
-        </motion.a>
-      )}
+            <div className="flex flex-wrap gap-x-6 gap-y-2">
+              {featured.deploy && (
+                <a
+                  href={featured.deploy}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-suitgold font-medium tracking-wide hover:text-cream transition-colors duration-200"
+                >
+                  Abrir la app →
+                </a>
+              )}
+              <a
+                href={featured.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-suitred font-medium tracking-wide hover:text-suitgold transition-colors duration-200"
+              >
+                Ver en GitHub →
+              </a>
+            </div>
+            </div>
+          </Reveal>
+        )}
 
-      <div className="grid sm:grid-cols-2 gap-6">
-        {others.map((proj, index) => (
-          <motion.a
-            key={proj.title}
-            href={proj.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.08 }}
-            viewport={{ once: true }}
-            className="group flex flex-col bg-surface/30 border border-cream/5 rounded-xl overflow-hidden hover:border-suitgold/20 transition-all duration-400"
-          >
+        <div className="grid sm:grid-cols-2 gap-6">
+          {others.map((proj, index) => (
+            <Reveal
+              key={proj.title}
+              y={30}
+              duration={0.6}
+              delay={index * 0.08}
+              className="h-full"
+            >
+              <a
+                href={proj.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col bg-surface/30 border border-cream/5 rounded-xl overflow-hidden hover:border-suitgold/20 transition-all duration-400 h-full"
+              >
             <div className="relative w-full h-48 overflow-hidden bg-neutral-900/30">
               <img
                 src={proj.image}
@@ -168,8 +184,9 @@ export default function Projects() {
                 </span>
               </div>
             </div>
-          </motion.a>
-        ))}
+            </a>
+            </Reveal>
+          ))}
       </div>
     </section>
   );

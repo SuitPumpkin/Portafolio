@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -18,11 +17,9 @@ export default function Home() {
         <div className="absolute -z-10 w-[50%] h-[50%] rounded-full bg-suitgold/5 blur-[100px] top-[20%] left-[10%]" />
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, x: 40 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-full md:w-[55%] px-6 md:px-12 lg:px-16 py-12 text-center md:text-left"
+      <div
+        className="animate-fade-in-up w-full md:w-[55%] px-6 md:px-12 lg:px-16 py-12 text-center md:text-left"
+        style={{ "--fade-x": "2.5rem", "--fade-y": "0px" }}
       >
         <p className="text-suitgold text-xs font-brand tracking-[0.3em] uppercase mb-4">
           Desarrollador de Software
@@ -47,7 +44,6 @@ export default function Home() {
               "Software Engineer",
               "Narrative Designer",
               "UI/UX Designer",
-              "C# .NET Developer",
             ]}
             loop
             cursor
@@ -59,10 +55,9 @@ export default function Home() {
         </h2>
 
         <p className="text-cream/80 text-sm md:text-base leading-relaxed max-w-lg mb-10">
-          Desarrollador de software con experiencia en C# .NET, Python y
-          tecnologías web y móviles. Apasionado por crear soluciones escalables
-          y bien estructuradas, combinando desarrollo técnico con diseño
-          narrativo y creatividad digital.
+          Desarrollador fullstack con experiencia real en software de gestión
+          para empresas, con React, TypeScript y NestJS. Me interesa el software
+          listo para producción y la experiencia del usuario al usarlo.
         </p>
 
         <div className="flex justify-center md:justify-start">
@@ -73,7 +68,7 @@ export default function Home() {
             Ver más
           </Link>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

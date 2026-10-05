@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import Reveal from "../components/Reveal";
 import { Lightbulb, Code2, Sparkles } from "lucide-react";
 
 const concepts = [
@@ -22,12 +22,7 @@ const concepts = [
 export default function Declaration() {
   return (
     <section className="max-w-5xl mx-auto py-20 px-6">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        className="text-left mb-16"
-      >
+      <div className="animate-fade-in-up text-left mb-16">
         <p className="text-suitgold text-xs font-brand tracking-[0.3em] uppercase mb-3">
           Declaración
         </p>
@@ -41,17 +36,16 @@ export default function Declaration() {
           Busco participar en proyectos donde la innovación y la narrativa se
           unan para generar impacto real.
         </p>
-      </motion.div>
+      </div>
 
       <div className="grid md:grid-cols-3 gap-6">
         {concepts.map((c, i) => (
-          <motion.div
+          <Reveal
             key={i}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
-            whileHover={{ y: -4 }}
+            y={20}
+            duration={0.5}
+            delay={i * 0.1}
+            lift
             className="flex flex-col items-center text-center bg-surface/50 border border-cream/5 rounded-xl p-8 transition-all duration-300 hover:border-suitgold/20"
           >
             {c.icon}
@@ -59,7 +53,7 @@ export default function Declaration() {
               {c.title}
             </h3>
             <p className="text-sm text-muted leading-relaxed">{c.desc}</p>
-          </motion.div>
+          </Reveal>
         ))}
       </div>
     </section>
