@@ -1,12 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #262626;
-  --color-surface: #303030;
-  --color-suitred: #AC393B;
-  --color-suitgold: #B39148;
-  --color-cream: #F2F0EF;
-  --color-muted: #9a9a9a;
+  /* Brand primitives — identity, identical in both themes. Do not change. */
+  --color-brand-black: #262626;
+  --color-brand-red: #AC393B;
+  --color-brand-gold: #B39148;
+  --color-light-bg: #F2F0EF;
+  --color-surface-dark: #303030;
+  --color-muted-dark: #9a9a9a;
+
+  /* Semantic tokens — dark values. Light overrides live in :root[data-theme="light"]. */
+  --color-background: var(--color-brand-black);
+  --color-surface: var(--color-surface-dark);
+  --color-text: var(--color-light-bg);
+  --color-muted: var(--color-muted-dark);
+  --color-line: var(--color-text);
+  --color-accent: var(--color-brand-gold);
+  --color-accent-brand: var(--color-brand-gold);
+  --color-highlight: var(--color-brand-red);
+  --color-on-accent: var(--color-light-bg);
+
   --font-primary: "Sora", ui-sans-serif, system-ui, sans-serif;
   --font-brand: "Montserrat", ui-sans-serif, system-ui, sans-serif;
   --animate-marquee: marquee 38s linear infinite;
@@ -44,12 +57,20 @@
 }
 
 :root {
-  --bg: #262626;
-  --surface: #303030;
-  --suitred: #AC393B;
-  --suitgold: #B39148;
-  --cream: #F2F0EF;
-  --muted: #9a9a9a;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-background: var(--color-light-bg);
+  --color-surface: #E6E2DF;
+  --color-text: var(--color-brand-black);
+  --color-muted: #666563;
+  --color-line: var(--color-text);
+  --color-accent: #806329;
+  --color-accent-brand: var(--color-brand-gold);
+  --color-highlight: var(--color-brand-red);
+  --color-on-accent: var(--color-light-bg);
 }
 
 html, body, #root {
@@ -57,8 +78,8 @@ html, body, #root {
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--cream);
+  background-color: var(--color-background);
+  color: var(--color-text);
   font-family: "Sora", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -66,13 +87,50 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--cream);
+  color: var(--color-text);
   font-family: "Sora", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
 ::selection {
-  background-color: var(--suitred);
-  color: var(--cream);
+  background-color: var(--color-highlight);
+  color: var(--color-on-accent);
+}
+
+.logo-light {
+  display: none;
+}
+
+:root[data-theme="light"] .logo-dark {
+  display: none;
+}
+
+:root[data-theme="light"] .logo-light {
+  display: block;
+}
+
+.portrait-img {
+  filter: brightness(0.92);
+}
+
+:root[data-theme="light"] .portrait-img {
+  filter: brightness(1.05);
+  transition: none;
+}
+
+:root[data-theme="light"] .portrait-img:hover {
+  scale: 1;
+}
+
+:root[data-theme="light"] .portrait-scrim {
+  display: none;
+}
+
+:root[data-theme="light"] .portrait-card {
+  border-width: 1px;
+  border-style: solid;
+  border-color: color-mix(in oklab, var(--color-brand-black) 12%, transparent);
+  box-shadow: 0 18px 40px -22px
+    color-mix(in oklab, var(--color-brand-black) 50%, transparent);
 }
 
 .reveal {
@@ -115,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   background: conic-gradient(
     from var(--suit-beam-angle),
     transparent 0deg,
-    var(--suitred) 30deg,
+    var(--color-highlight) 30deg,
     transparent 60deg
   );
   -webkit-mask:

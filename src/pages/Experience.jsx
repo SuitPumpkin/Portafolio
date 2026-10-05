@@ -84,19 +84,19 @@ function ExperienceCard({ exp, index }) {
       x={-20}
       delay={index * 0.08}
       duration={0.5}
-      className="flex flex-col md:flex-row md:items-start gap-2 md:gap-8 p-6 bg-surface/30 border border-cream/5 rounded-xl hover:border-suitgold/15 transition-all duration-300"
+      className="flex flex-col md:flex-row md:items-start gap-2 md:gap-8 p-6 bg-surface/30 border border-line/5 rounded-xl hover:border-accent/15 transition-all duration-300"
     >
       <div className="md:w-48 shrink-0">
-        <p className="text-cream/50 text-xs font-brand tracking-wide uppercase">
+        <p className="text-muted text-xs font-brand tracking-wide uppercase">
           {exp.period}
         </p>
       </div>
       <div className="flex-1">
-        <h4 className="text-lg font-semibold text-cream font-primary">
+        <h4 className="text-lg font-semibold text-text font-primary">
           {exp.role}
         </h4>
-        <p className="text-sm text-suitgold mb-3">{exp.company}</p>
-        <ul className="list-disc list-inside text-cream/70 text-sm space-y-1">
+        <p className="text-sm text-accent mb-3">{exp.company}</p>
+        <ul className="list-disc list-inside text-text/70 text-sm space-y-1">
           {exp.details.map((d, j) => (
             <li key={j}>{d}</li>
           ))}
@@ -109,7 +109,7 @@ function ExperienceCard({ exp, index }) {
 function Section({ label, items }) {
   return (
     <div className="mb-20">
-      <p className="text-suitgold text-xs font-brand tracking-[0.3em] uppercase mb-6">
+      <p className="text-accent text-xs font-brand tracking-[0.3em] uppercase mb-6">
         {label}
       </p>
       <div className="space-y-4">
@@ -124,26 +124,26 @@ function Section({ label, items }) {
 function CertMedal({ cert }) {
   return (
     <article
-      className="relative w-72 shrink-0 min-h-[11rem] bg-surface/30 border border-suitgold/25 rounded-xl p-5 transition-all duration-300 hover:border-suitgold/45 hover:-translate-y-1"
+      className="relative w-72 shrink-0 min-h-[11rem] bg-surface/30 border border-accent/25 rounded-xl p-5 transition-all duration-300 hover:border-accent/45 hover:-translate-y-1"
     >
-      <div className="absolute inset-[5px] rounded-[10px] border border-suitgold/15 pointer-events-none" />
-      <div className="absolute top-4 right-4 w-12 h-12 rounded-full border border-suitred/50 bg-suitred/10 flex items-center justify-center">
-        <div className="w-9 h-9 rounded-full border border-dashed border-suitred/40 flex items-center justify-center">
-          <span className="text-[10px] font-brand font-semibold text-suitred">
+      <div className="absolute inset-[5px] rounded-[10px] border border-accent/15 pointer-events-none" />
+      <div className="absolute top-4 right-4 w-12 h-12 rounded-full border border-highlight/50 bg-highlight/10 flex items-center justify-center">
+        <div className="w-9 h-9 rounded-full border border-dashed border-highlight/40 flex items-center justify-center">
+          <span className="text-[10px] font-brand font-semibold text-highlight">
             {cert.year}
           </span>
         </div>
       </div>
-      <h4 className="text-cream font-semibold text-sm mb-1 font-primary pr-12 line-clamp-2">
+      <h4 className="text-text font-semibold text-sm mb-1 font-primary pr-12 line-clamp-2">
         {cert.title}
       </h4>
       <p className="text-muted text-xs mb-3">{cert.org}</p>
-      <div className="h-px bg-gradient-to-r from-transparent via-suitred/40 to-transparent mb-3" />
+      <div className="h-px bg-gradient-to-r from-transparent via-highlight/40 to-transparent mb-3" />
       <div className="flex flex-wrap gap-1.5">
         {cert.skills.map((s, j) => (
           <span
             key={j}
-            className="bg-suitgold/10 text-suitgold text-[10px] font-medium px-2 py-1 rounded-sm border border-suitgold/20"
+            className="bg-accent/10 text-accent text-[10px] font-medium px-2 py-1 rounded-sm border border-accent/20"
           >
             {s}
           </span>
@@ -157,13 +157,13 @@ export default function Experience() {
   return (
     <section className="max-w-6xl mx-auto py-16 px-6">
       <div className="animate-fade-in-up text-left mb-16">
-        <p className="text-suitgold text-xs font-brand tracking-[0.3em] uppercase mb-3">
+        <p className="text-accent text-xs font-brand tracking-[0.3em] uppercase mb-3">
           Trayectoria
         </p>
-        <h2 className="text-3xl md:text-4xl font-primary font-semibold text-cream mb-6">
+        <h2 className="text-3xl md:text-4xl font-primary font-semibold text-text mb-6">
           Experiencia y Certificaciones
         </h2>
-        <p className="text-cream/80 max-w-2xl text-lg leading-relaxed">
+        <p className="text-text/80 max-w-2xl text-lg leading-relaxed">
           Una trayectoria en evolución constante — combinando desarrollo
           técnico, diseño creativo y formación continua.
         </p>
@@ -175,7 +175,7 @@ export default function Experience() {
       </div>
 
       <div>
-        <p className="text-suitgold text-xs font-brand tracking-[0.3em] uppercase mb-6">
+        <p className="text-accent text-xs font-brand tracking-[0.3em] uppercase mb-6">
           Certificaciones
         </p>
         <div className="cert-marquee-mask -my-3 overflow-hidden py-3 [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">

@@ -68,10 +68,10 @@ export default function Projects() {
   return (
     <section className="max-w-6xl mx-auto py-16 px-6">
       <div className="animate-fade-in-up text-left mb-16">
-        <p className="text-suitgold text-xs font-brand tracking-[0.3em] uppercase mb-3">
+        <p className="text-accent text-xs font-brand tracking-[0.3em] uppercase mb-3">
           Portafolio
         </p>
-        <h2 className="text-3xl md:text-4xl font-primary font-semibold text-cream">
+        <h2 className="text-3xl md:text-4xl font-primary font-semibold text-text">
           Proyectos
         </h2>
       </div>
@@ -80,7 +80,7 @@ export default function Projects() {
         <Reveal
           y={40}
           duration={0.7}
-          className="group grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 border border-cream/5 bg-surface/30 rounded-2xl overflow-hidden hover:border-suitgold/20 transition-all duration-500"
+          className="group grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 border border-line/5 bg-surface/30 rounded-2xl overflow-hidden hover:border-accent/20 transition-all duration-500"
         >
           <div className="relative w-full h-64 md:h-80 overflow-hidden bg-neutral-900/30">
             <img
@@ -88,24 +88,24 @@ export default function Projects() {
               alt={featured.title}
               className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-[1.03]"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-bg/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/60 to-transparent" />
           </div>
           <div className="p-8 md:p-10 md:pr-12">
-            <p className="text-suitgold text-xs font-brand tracking-[0.2em] uppercase mb-3">
+            <p className="text-accent text-xs font-brand tracking-[0.2em] uppercase mb-3">
               Proyecto destacado
             </p>
-            <h3 className="text-2xl md:text-3xl font-primary font-semibold text-cream mb-3">
+            <h3 className="text-2xl md:text-3xl font-primary font-semibold text-text mb-3">
               {featured.title}
             </h3>
             <p className="text-sm text-muted mb-4">{featured.period}</p>
-            <p className="text-cream/75 text-sm leading-relaxed mb-6">
+            <p className="text-text/75 text-sm leading-relaxed mb-6">
               {featured.description}
             </p>
             <div className="flex flex-wrap gap-2 mb-8">
               {featured.skills.map((s, i) => (
                 <span
                   key={i}
-                  className="bg-suitgold/10 text-suitgold text-xs font-medium px-3 py-1.5 rounded-sm border border-suitgold/20"
+                  className="bg-accent/10 text-accent text-xs font-medium px-3 py-1.5 rounded-sm border border-accent/20"
                 >
                   {s}
                 </span>
@@ -117,7 +117,7 @@ export default function Projects() {
                   href={featured.deploy}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-suitgold font-medium tracking-wide hover:text-cream transition-colors duration-200"
+                  className="text-sm text-accent font-medium tracking-wide hover:text-on-accent transition-colors duration-200"
                 >
                   Abrir la app →
                 </a>
@@ -126,7 +126,7 @@ export default function Projects() {
                 href={featured.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-suitred font-medium tracking-wide hover:text-suitgold transition-colors duration-200"
+                className="text-sm text-highlight font-medium tracking-wide hover:text-accent transition-colors duration-200"
               >
                 Ver en GitHub →
               </a>
@@ -148,7 +148,7 @@ export default function Projects() {
                 href={proj.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col bg-surface/30 border border-cream/5 rounded-xl overflow-hidden hover:border-suitgold/20 transition-all duration-400 h-full"
+                className="group flex flex-col bg-surface/30 border border-line/5 rounded-xl overflow-hidden hover:border-accent/20 transition-all duration-400 h-full"
               >
             <div className="relative w-full h-48 overflow-hidden bg-neutral-900/30">
               <img
@@ -156,30 +156,30 @@ export default function Projects() {
                 alt={proj.title}
                 className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-[1.03]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-bg/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
             </div>
             <div className="p-5 flex flex-col flex-grow">
               <div className="flex items-center justify-between mb-2">
-                <h3 className="text-lg font-semibold text-cream font-primary">
+                <h3 className="text-lg font-semibold text-text font-primary">
                   {proj.title}
                 </h3>
               </div>
               <p className="text-xs text-muted mb-3">{proj.period}</p>
-              <p className="text-cream/70 text-sm leading-relaxed mb-4 line-clamp-3">
+              <p className="text-text/70 text-sm leading-relaxed mb-4 line-clamp-3">
                 {proj.description}
               </p>
               <div className="flex flex-wrap gap-1.5 mb-4">
                 {proj.skills.map((s, i) => (
                   <span
                     key={i}
-                    className="bg-suitgold/10 text-suitgold text-[10px] font-medium px-2 py-1 rounded-sm border border-suitgold/20"
+                    className="bg-accent/10 text-accent text-[10px] font-medium px-2 py-1 rounded-sm border border-accent/20"
                   >
                     {s}
                   </span>
                 ))}
               </div>
               <div className="mt-auto">
-                <span className="text-xs text-suitred font-medium transition-colors duration-200 group-hover:text-suitgold tracking-wide">
+                <span className="text-xs text-highlight font-medium transition-colors duration-200 group-hover:text-accent tracking-wide">
                   Ver proyecto →
                 </span>
               </div>
