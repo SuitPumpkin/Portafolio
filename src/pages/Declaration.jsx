@@ -30,11 +30,13 @@ export default function Declaration() {
           Declaración profesional
         </h2>
         <p className="text-cream/80 max-w-2xl text-lg leading-relaxed">
-          Creo en la tecnología como una herramienta para construir experiencias
-          significativas. Mi enfoque combina lógica, creatividad y diseño para
-          transformar ideas complejas en soluciones accesibles y funcionales.
-          Busco participar en proyectos donde la innovación y la narrativa se
-          unan para generar impacto real.
+          Creo en la tecnología como una herramienta para <em className="text-suitgold not-italic">mejorar la vida de
+          las personas</em> a travez de experiencias significativas. Mi enfoque 
+          combina lógica, creatividad y diseño
+          para transformar ideas complejas en soluciones accesibles y funcionales.
+          Busco participar en proyectos que logren un <em className="text-suitgold not-italic">impacto positivo</em>, donde
+          pueda aplicar mis habilidades técnicas y creativas para crear experiencias
+          que sean tanto <em className="text-suitgold not-italic">útiles como memorables</em>.
         </p>
       </div>
 

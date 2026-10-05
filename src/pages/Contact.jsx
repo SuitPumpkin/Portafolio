@@ -105,10 +105,10 @@ export default function Contact() {
           </p>
           <a
             href="mailto:rodrigoalozan@gmail.com"
-            className="inline-block text-center border border-suitred text-suitred hover:bg-suitred hover:text-cream text-sm px-8 py-3 rounded-sm transition-all duration-300 tracking-wide font-primary font-medium"
+            className="contact-beam inline-block text-center border border-suitred/40 text-suitred hover:bg-suitred hover:text-cream text-sm px-8 py-3 rounded-sm transition-all duration-300 tracking-wide font-primary font-medium"
           >
             Contáctame
-            </a>
+          </a>
           </Reveal>
         </div>
       </section>

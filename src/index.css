@@ -96,6 +96,46 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate3d(0, -0.25rem, 0) scale(1);
 }
 
+@property --suit-beam-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.contact-beam {
+  position: relative;
+}
+
+.contact-beam::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--suit-beam-angle),
+    transparent 0deg,
+    var(--suitred) 30deg,
+    transparent 60deg
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: suit-beam-spin 3s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes suit-beam-spin {
+  to {
+    --suit-beam-angle: 360deg;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee {
     animation: none;
@@ -117,5 +157,9 @@ h1, h2, h3, h4, h5, h6 {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+
+  .contact-beam::before {
+    animation: none;
   }
 }

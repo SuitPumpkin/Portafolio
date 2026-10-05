@@ -26,22 +26,16 @@ export default function About() {
         >
           <p>
             Disfruto trabajar en entornos donde puedo combinar mi lado técnico
-            con la parte creativa. A lo largo de mi formación en Creatividad
-            Digital y mis estudios de Ingeniería en Computación —completos
-            parcialmente— he aprendido a construir proyectos escalables,
-            visualmente atractivos y centrados en la experiencia del usuario.
+            con la parte creativa. A lo largo de mi formación en <em className="text-suitgold not-italic">Creatividad
+            Digital e Ingeniería en Computación</em> he aprendido
+            a construir proyectos escalables, visualmente atractivos y centrados
+            en la experiencia del usuario.
           </p>
           <p>
-            Creo que la mejor tecnología es aquella que{" "}
-            <em className="text-suitgold not-italic">cuenta una historia</em>.
+            Creo que las mejores soluciones son aquellas que{" "}
+            <em className="text-suitgold not-italic">cuentan una historia</em>.
             Busco unir la programación, el diseño visual y la narrativa para
             crear experiencias significativas y humanas.
-          </p>
-          <p>
-            Suit Pumpkin nace como unnickname de Minecraft que creció hasta
-            convertirse en una marca personal: un perfil profesional que
-            combina formalidad, creatividad y un enfoque diferente hacia la
-            tecnología.
           </p>
         </Reveal>
 
